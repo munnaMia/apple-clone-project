@@ -6,4 +6,8 @@
     .top-nav{
         @apply flex justify-between w-full items-center py-2 px-10 border-b;
     }
+
+    .bottom-nav-option{
+        @apply duration-150 ease-in-out uppercase font-medium text-base font-myFonts text-[#444444] hover:text-[#e52e06] leading-10;
+    }
 }
