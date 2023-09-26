@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .top-nav{
+        @apply flex justify-between w-full items-center py-2 px-10 border-b;
+    }
+}
