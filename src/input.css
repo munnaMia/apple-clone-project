@@ -10,4 +10,14 @@
     .bottom-nav-option{
         @apply duration-150 ease-in-out uppercase font-medium text-base font-myFonts text-[#444444] hover:text-[#e52e06] leading-10;
     }
+
+    .feature-btn{
+        @apply ml-6 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
+    }
+
+    .feature-btnSM{
+        @apply ml-7 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
+    }
+
+  
 }

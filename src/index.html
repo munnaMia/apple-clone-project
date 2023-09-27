@@ -39,15 +39,15 @@
             <!-- top navbar ends here  -->
 
             <!-- bottom navbar starts here  -->
-            <div class="flex justify-between items-center px-10 pt-3">
+            <div class="flex justify-between items-center lg:px-10 sm:px-20 custom:px-5 pt-3">
                 <!-- company logo  -->
                 <div>
-                    <img class="max-w-[170px]" src="../src/images/Logos/logo_300x300.png" alt="">
+                    <img class="max-w-[170px] sm:max-w-[150px] custom:max-w-[130px]" src="../src/images/Logos/logo_300x300.png" alt="">
                 </div>
 
                 <!-- menu items  -->
                 <div>
-                    <ul class="flex gap-5">
+                    <ul class="lg:flex lg:gap-5 hidden">
                         <li class="bottom-nav-option"><a href="#">home <i class="fa-solid fa-angle-down text-xs"></i> </a></li>
                         <li class="bottom-nav-option"><a href="#">electronics <i class="fa-solid fa-angle-down text-xs"></i></a></li>
                         <li class="bottom-nav-option"><a href="#">blog <i class="fa-solid fa-angle-down text-xs"></i></a></li>
@@ -58,10 +58,11 @@
 
                 <!-- feature btns  -->
                 <div>
-                    <ul class="flex">
-                        <li class="ml-6 text-2xl duration-150 ease-in-out hover:text-[#e52e06]"><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li class="ml-6 text-2xl duration-150 ease-in-out hover:text-[#e52e06]"><i class="fa-regular fa-heart"></i></li>
-                        <li class="ml-6 text-2xl duration-150 ease-in-out hover:text-[#e52e06]"><i class="fa-solid fa-bag-shopping"></i></li>
+                    <ul class="flex items-center">
+                        <li class="lg:feature-btn sm:feature-btnSM custom:text-xl custom:ml-3"><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li class="lg:feature-btn sm:feature-btnSM custom:text-xl custom:ml-3"><i class="fa-regular fa-heart"></i></li>
+                        <li class="lg:feature-btn sm:feature-btnSM custom:text-xl custom:ml-3"><i class="fa-solid fa-bag-shopping"></i></li>
+                        <li class="lg:feature-btn lg:hidden sm:feature-btnSM pt-1 custom:text-xl custom:ml-3"><i class="fa-solid fa-bars"></i></li>
                     </ul>
                 </div>
             </div>
