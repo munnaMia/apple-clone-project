@@ -12,11 +12,15 @@
     }
 
     .feature-btn{
-        @apply ml-6 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
+        @apply ml-8 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
     }
 
     .feature-btnSM{
-        @apply ml-7 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
+        @apply ml-4 text-xl duration-150 ease-in-out hover:text-[#e52e06];
+    }
+
+    .hero-section{
+        @apply bg-[url('../src/images/Banners/x2.jpg')] max-w-7xl mx-auto my-0 p-10 bg-no-repeat m-0  bg-cover h-[90vh] bg-center flex items-center;
     }
 
   

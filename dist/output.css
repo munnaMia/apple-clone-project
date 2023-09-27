@@ -551,6 +551,23 @@ video {
   color: rgb(229 46 6 / var(--tw-text-opacity));
 }
 
+.hero-section {
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  height: 90vh;
+  max-width: 80rem;
+  align-items: center;
+  background-image: url('../src/images/Banners/x2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -561,6 +578,26 @@ video {
   margin-bottom: 0px;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-\[3rem\] {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -569,12 +606,60 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[2\.3\] {
+  margin-top: 2.3;
+}
+
+.mt-\[2\.5rem\] {
+  margin-top: 2.5rem;
+}
+
+.mt-\[2rem\] {
+  margin-top: 2rem;
+}
+
+.mt-\[1\.7rem\] {
+  margin-top: 1.7rem;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[2\] {
+  margin-bottom: 2;
+}
+
+.mb-\[2rem\] {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-full {
@@ -605,12 +690,21 @@ video {
   justify-content: space-between;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
 }
 
 .border-none {
   border-style: none;
+}
+
+.bg-\[\#e52e06\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 46 6 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -629,8 +723,26 @@ video {
   padding-top: 0.75rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-myFonts {
   font-family: 'Work Sans', sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-base {
@@ -660,8 +772,24 @@ video {
   font-weight: 400;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .not-italic {
   font-style: normal;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-\[\#333333\] {
@@ -674,16 +802,42 @@ video {
   color: rgb(68 68 68 / var(--tw-text-opacity));
 }
 
+.text-\[\#e52e06\] {
+  --tw-text-opacity: 1;
+  color: rgb(229 46 6 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-@media (min-width: 640px) {
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 320px) {
   .sm\:feature-btnSM {
-    margin-left: 1.75rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     transition-duration: 150ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -708,7 +862,7 @@ video {
   }
 
   .lg\:feature-btn {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     font-size: 1.5rem;
     line-height: 2rem;
     transition-duration: 150ms;
@@ -721,34 +875,19 @@ video {
   }
 }
 
-@media (min-width: 320px) {
-  .custom\:ml-3 {
-    margin-left: 0.75rem;
-  }
-
-  .custom\:max-w-\[130px\] {
-    max-width: 130px;
-  }
-
-  .custom\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .custom\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
+.hover\:bg-\[\#333333\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .sm\:max-w-\[150px\] {
     max-width: 150px;
   }
 
-  .sm\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .sm\:px-11 {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 }
 
