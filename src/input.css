@@ -20,8 +20,14 @@
     }
 
     .hero-section{
-        @apply bg-[url('../src/images/Banners/x2.jpg')] max-w-7xl mx-auto my-0 p-10 bg-no-repeat m-0  bg-cover h-[90vh] bg-center flex items-center;
+        @apply bg-[url('../src/images/Banners/x2.jpg')] max-w-7xl mx-auto my-0 p-10 bg-no-repeat m-0  bg-cover h-[100vh] bg-center flex items-center;
     }
+
+    .ads{
+        @apply mt-14 px-5 flex flex-col justify-center max-w-7xl mx-auto my-0 bg-[url('../src/images/Banners/main-banner-01.jpg')] bg-no-repeat bg-center bg-cover h-[80vh]
+    }
+
+  
 
   
 }
