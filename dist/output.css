@@ -614,6 +614,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -670,8 +674,20 @@ video {
   margin-top: 1.7rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
 }
 
 .flex {
@@ -696,6 +712,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-20 {
@@ -754,6 +774,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -764,6 +788,18 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .overflow-hidden {
@@ -810,6 +846,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -828,6 +869,14 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
 }
 
 .text-center {
@@ -1104,7 +1153,16 @@ video {
   color: rgb(229 46 6 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#e52e04\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 46 4 / var(--tw-text-opacity));
+}
+
 @media (min-width: 320px) {
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -1121,9 +1179,18 @@ video {
     max-width: 150px;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-4xl {
@@ -1138,6 +1205,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -1148,6 +1219,15 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-5xl {
@@ -1162,6 +1242,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:inline-block {
     display: inline-block;
   }
@@ -1182,6 +1266,10 @@ video {
     width: 8rem;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:gap-5 {
     gap: 1.25rem;
   }
@@ -1189,6 +1277,11 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl {
