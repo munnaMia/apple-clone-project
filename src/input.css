@@ -12,15 +12,15 @@
     }
 
     .feature-btn{
-        @apply ml-8 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
+        @apply pr-4 text-2xl duration-150 ease-in-out hover:text-[#e52e06];
     }
 
     .feature-btnSM{
-        @apply ml-4 text-xl duration-150 ease-in-out hover:text-[#e52e06];
+        @apply pr-4 text-xl duration-150 ease-in-out hover:text-[#e52e06];
     }
 
     .hero-section{
-        @apply bg-[url('../src/images/Banners/x2.jpg')] max-w-7xl mx-auto my-0 p-10 bg-no-repeat m-0  bg-cover h-[100vh] bg-center flex items-center;
+        @apply bg-[url('../src/images/Banners/x2.jpg')] max-w-7xl mx-auto my-0 p-10 bg-no-repeat m-0  bg-cover sm:h-[70vh] md:h-[100vh] lg:h-[100vh] bg-center flex items-center;
     }
 
     .ads{

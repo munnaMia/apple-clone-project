@@ -9,15 +9,20 @@ window.addEventListener("scroll", ()=>{
     }
 });
 
+const imageArray = ['../src/images/Products/p1_220x240_crop_center.jpg', '../src/images/Products/p4_220x240_crop_center.jpg', '../src/images/Products/p5_61c8ce6b-3afa-4276-a285-f98e4d5c7f67_220x240_crop_center.jpg' ,'../src/images/Products/13_220x240_crop_center.jpg','../src/images/Products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_220x240_crop_center.jpg', '../src/images/Products/p9_large.jpg','../src/images/Products/p6_large.jpg','../src/images/Products/p5_large.jpg','../src/images/Products/p2_large.jpg','../src/images/Products/p4_large.jpg','../src/images/Products/12_large.jpg','../src/images/Products/p1_large.jpg','../src/images/Products/13_large.jpg']
+const productBox = document.querySelectorAll(".L-product-box");
+const product = document.querySelectorAll(".L-product");
 
-const productBox = document.querySelector(".L-product-box");
-const product = document.querySelector(".L-product");
+productBox.forEach((element, index) => {
+    let orignalImage = product[index].src;
+    productBox[index].addEventListener("mouseover", ()=>{
+        product[index].src = imageArray[index]
+    })
 
-productBox.addEventListener("mouseover", ()=>{
-    product.src = '../src/images/Products/p1_220x240_crop_center.jpg'
-})
-productBox.addEventListener("mouseout", ()=>{
-    product.src= '../src/images/Products/13_220x240_crop_center.jpg'
-})
+    productBox[index].addEventListener("mouseout", ()=>{
+        product[index].src= orignalImage
+    })
+});
+
 
 
