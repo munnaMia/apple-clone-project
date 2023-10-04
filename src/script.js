@@ -6,10 +6,15 @@ window.addEventListener("scroll", () => {
   console.log(23);
   if (window.scrollY > scrollThresHold) {
     navBar.classList.add("shadow-lg");
+    navBar.classList.add("fixed");
     homeBtn.classList.add("block");
     homeBtn.classList.remove("hidden");
+    navBar.classList.remove("relative");
   } else {
     navBar.classList.remove("shadow-lg");
+    navBar.classList.add("relative");
+    navBar.classList.remove("fixed");
+
     homeBtn.classList.remove("block");
     homeBtn.classList.add("hidden");
   }
@@ -55,7 +60,6 @@ function updateClock() {
   );
   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
 
   setTimeout(updateClock, 1000);
 }

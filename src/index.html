@@ -1,500 +1,1121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="../dist/output.css" rel="stylesheet">
-</head>
-<body class="relative">
-    <button id="homeBtn" class="fixed right-5 bottom-5 lg:h-10 lg:w-10 md:h-8 md:w-8 sm:h-7 sm:w-7 text-white z-40 rounded-full bg-[#e52e06]"> <a href="#home" class="w-full h-full flex items-center justify-center"><i class="fa-solid fa-arrow-up sm:text-xs md:text-base text-center"></i></a></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Apple</title>
+  </head>
+  <body class="relative">
+    <button
+      id="homeBtn"
+      class="fixed right-5 bottom-5 lg:h-10 lg:w-10 md:h-8 md:w-8 sm:h-7 sm:w-7 text-white z-40 rounded-full bg-[#e52e06]"
+    >
+      <a href="#home" class="w-full h-full flex items-center justify-center"
+        ><i class="fa-solid fa-arrow-up sm:text-xs md:text-base text-center"></i
+      ></a>
+    </button>
 
     <!-- header section starts here  -->
-    <header class="w-screen pb-2 fixed bg-white z-30 navbar">
-        <nav class="flex mx-auto my-0 flex-col max-w-7xl relative">
-            <!-- top navbar starts here  -->
-            <div class="lg:top-nav hidden">
-                <!-- top nav part one  -->
-                <div class="flex">
-                    <p class="font-myFonts text-sm font-medium text-[#444444] not-italic mr-2">(08)123 456 7890</p>
-                    <p class="font-myFonts text-sm font-medium text-[#333333] not-italic border-l-2 pl-2"><a href="https://maps.app.goo.gl/VGJbiymDB3faxuzY7">Store location</a></p>
-                </div>
+    <header class="w-screen pb-2 relative bg-white z-30 navbar">
+      <nav class="flex mx-auto my-0 flex-col max-w-7xl relative">
+        <!-- top navbar starts here  -->
+        <div class="lg:top-nav hidden">
+          <!-- top nav part one  -->
+          <div class="flex">
+            <p
+              class="font-myFonts text-sm font-medium text-[#444444] not-italic mr-2"
+            >
+              (08)123 456 7890
+            </p>
+            <p
+              class="font-myFonts text-sm font-medium text-[#333333] not-italic border-l-2 pl-2"
+            >
+              <a href="https://maps.app.goo.gl/VGJbiymDB3faxuzY7"
+                >Store location</a
+              >
+            </p>
+          </div>
 
-               <!-- top nav part two -->
-                <div>
-                    <span class="font-myFonts not-italic font-normal text-base text-[#444444]">Tell a friend about Drou & get 20% off*</span>
-                </div>
+          <!-- top nav part two -->
+          <div>
+            <span
+              class="font-myFonts not-italic font-normal text-base text-[#444444]"
+              >Tell a friend about Drou & get 20% off*</span
+            >
+          </div>
 
-                <!-- top nav part three  -->
-                <div class="flex font-myFonts text-sm font-bold text-[#444444] not-italic">
-                    <select class="font-myFonts bg-transparent outline-none border-none mr-3 cursor-pointer" name="money" id="">
-                        <option class="font-myFonts bg-transparent" value="USD">USD</option>
-                        <option class="font-myFonts bg-transparent" value="TK">TK</option>
-                        <option class="font-myFonts bg-transparent" value="INR">INR</option>
-                    </select>
-                    <span class="font-myFonts text-sm font-medium text-[#444444] not-italic border-l-2 pl-2 cursor-pointer">Log in / Sign Up</span>
-                </div>
-            </div>
-            <!-- top navbar ends here  -->
+          <!-- top nav part three  -->
+          <div
+            class="flex font-myFonts text-sm font-bold text-[#444444] not-italic"
+          >
+            <select
+              class="font-myFonts bg-transparent outline-none border-none mr-3 cursor-pointer"
+              name="money"
+              id=""
+            >
+              <option class="font-myFonts bg-transparent" value="USD">
+                USD
+              </option>
+              <option class="font-myFonts bg-transparent" value="TK">TK</option>
+              <option class="font-myFonts bg-transparent" value="INR">
+                INR
+              </option>
+            </select>
+            <span
+              class="font-myFonts text-sm font-medium text-[#444444] not-italic border-l-2 pl-2 cursor-pointer"
+              >Log in / Sign Up</span
+            >
+          </div>
+        </div>
+        <!-- top navbar ends here  -->
 
-            <!-- bottom navbar starts here  -->
-            <div class="flex justify-between items-center lg:px-10 sm:px-10 pt-3">
-                <!-- company logo  -->
-                <div>
-                    <a href="#home">
-                    <img class="max-w-[170px] sm:max-w-[150px] custom:max-w-[130px]" src="../src/images/Logos/logo_300x300.png" alt="">
+        <!-- bottom navbar starts here  -->
+        <div class="flex justify-between items-center lg:px-10 sm:px-10 pt-3">
+          <!-- company logo  -->
+          <div>
+            <a href="#home">
+              <img
+                class="max-w-[170px] sm:max-w-[150px] custom:max-w-[130px]"
+                src="../src/images/Logos/logo_300x300.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!-- menu items  -->
+          <div>
+            <ul class="lg:flex lg:gap-5 hidden">
+              <li class="bottom-nav-option">
+                <a href="#home"
+                  >home <i class="fa-solid fa-angle-down text-xs"></i>
                 </a>
-                </div>
+              </li>
+              <li class="bottom-nav-option">
+                <a href="#product"
+                  >electronics <i class="fa-solid fa-angle-down text-xs"></i
+                ></a>
+              </li>
+              <li class="bottom-nav-option">
+                <a href="#blog"
+                  >blog <i class="fa-solid fa-angle-down text-xs"></i
+                ></a>
+              </li>
+              <li class="bottom-nav-option">
+                <a href="#home"
+                  >pages <i class="fa-solid fa-angle-down text-xs"></i
+                ></a>
+              </li>
+              <li class="bottom-nav-option"><a href="#contact">contact </a></li>
+            </ul>
+          </div>
 
-                <!-- menu items  -->
-                <div>
-                    <ul class="lg:flex lg:gap-5 hidden">
-                        <li class="bottom-nav-option"><a href="#home">home <i class="fa-solid fa-angle-down text-xs"></i> </a></li>
-                        <li class="bottom-nav-option"><a href="#product">electronics <i class="fa-solid fa-angle-down text-xs"></i></a></li>
-                        <li class="bottom-nav-option"><a href="#blog">blog <i class="fa-solid fa-angle-down text-xs"></i></a></li>
-                        <li class="bottom-nav-option"><a href="#home">pages <i class="fa-solid fa-angle-down text-xs"></i></a></li>
-                        <li class="bottom-nav-option"><a href="#contact">contact </a></li>
-                    </ul>
-                </div>
-
-                <!-- feature btns  -->
-                <div>
-                    <ul class="flex items-center">
-                        <li class="lg:feature-btn sm:feature-btnSM"><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li class="lg:feature-btn sm:feature-btnSM"><i class="fa-regular fa-heart"></i></li>
-                        <li class="lg:feature-btn sm:feature-btnSM"><i class="fa-solid fa-bag-shopping"></i></li>
-                        <li class="lg:feature-btn lg:hidden sm:feature-btnSM pt-1"><i class="fa-solid fa-bars"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- bottom navbar ends here  -->
-        </nav>
+          <!-- feature btns  -->
+          <div>
+            <ul class="flex items-center">
+              <li class="lg:feature-btn sm:feature-btnSM">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li class="lg:feature-btn sm:feature-btnSM">
+                <i class="fa-regular fa-heart"></i>
+              </li>
+              <li class="lg:feature-btn sm:feature-btnSM">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </li>
+              <li class="lg:feature-btn lg:hidden sm:feature-btnSM pt-1">
+                <i class="fa-solid fa-bars"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- bottom navbar ends here  -->
+      </nav>
     </header>
     <!-- header section ends here  -->
 
     <!-- hero section starts here  -->
     <section class="hero-section" id="home">
-        <div class="">
-            <p class="text-[#e52e06] leading-7 font-normal uppercase font-myFonts lg:text-2xl md:text-xl sm:text-xl sm:font-medium animate__animated animate__fadeInUp duration-500 ease-in">sale up to 30% off</p>
-            <h1 class="font-myFonts leading-10 font-medium lg:text-5xl md:text-4xl sm:text-3xl text-[#333333] not-italic lg:mt-[1.7rem] sm:mt-5 mb-[2rem] animate__animated animate__fadeInUp duration-500 ease-in">Apple Watch Series</h1>
-            <p class="lg:leading-8 sm:leading-5 font-myFonts font-normal text-[18px] text-[#333333] animate__animated animate__fadeInUp duration-500 ease-in"> Feature packed at a better value than ever Powerful seansor to <br> monitor your fitness</p>
-            <button class="lg:w-40 md:w-40 sm:w-36 bg-[#e52e06] h-[55px] mt-5 rounded-full font-bold text-base text-white duration-300 ease-in-out hover:bg-[#333333] text-center animate__animated animate__fadeInUp">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
+      <div class="">
+        <p
+          class="text-[#e52e06] leading-7 font-normal uppercase font-myFonts lg:text-2xl md:text-xl sm:text-xl sm:font-medium animate__animated animate__fadeInUp duration-500 ease-in"
+        >
+          sale up to 30% off
+        </p>
+        <h1
+          class="font-myFonts leading-10 font-medium lg:text-5xl md:text-4xl sm:text-3xl text-[#333333] not-italic lg:mt-[1.7rem] sm:mt-5 mb-[2rem] animate__animated animate__fadeInUp duration-500 ease-in"
+        >
+          Apple Watch Series
+        </h1>
+        <p
+          class="lg:leading-8 sm:leading-5 font-myFonts font-normal text-[18px] text-[#333333] animate__animated animate__fadeInUp duration-500 ease-in"
+        >
+          Feature packed at a better value than ever Powerful seansor to <br />
+          monitor your fitness
+        </p>
+        <button
+          class="lg:w-40 md:w-40 sm:w-36 bg-[#e52e06] h-[55px] mt-5 rounded-full font-bold text-base text-white duration-300 ease-in-out hover:bg-[#333333] text-center animate__animated animate__fadeInUp"
+        >
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
     </section>
     <!-- hero section ends here  -->
 
     <!-- tranding products section starts here  -->
     <section class="pt-9 flex flex-col max-w-7xl mx-auto my-0 px-5">
-        <div>
-            <h2 class="ml-7 pl-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]">Tranding Categories</h2>
-        </div>
+      <div>
+        <h2
+          class="ml-7 pl-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]"
+        >
+          Tranding Categories
+        </h2>
+      </div>
 
-        <div class="flex flex-row gap-14 mt-16 w-full px-5 justify-center animate__animated animate__fadeInUp">
-            <div class="overflow-hidden">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/p7_300x300.jpg" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Iphone</h3>
-            </div>
-            <div class="overflow-hidden">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/11_300x300.jpg" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Mini Speaker</h3>
-            </div>
-            <div class="overflow-hidden sm:hidden md:inline-block lg:inline-block">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/9_300x300.avif" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Tablets</h3>
-            </div>
-            <div class="overflow-hidden sm:hidden md:inline-block lg:inline-block">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/12_300x300.jpg" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Headphone</h3>
-            </div>
-            <div class="overflow-hidden sm:hidden md:hidden lg:inline-block">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/10_300x300.jpg" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Laptops</h3>
-            </div>
-            <div class="overflow-hidden sm:hidden md:hidden lg:inline-block">
-                <div><img class="lg:w-32 hover:scale-110 duration-500 sm:w-44" src="../src/images/Products/p4_300x300.jpg" alt=""></div>
-                <h3 class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]">Accessories</h3>
-            </div>
+      <div
+        class="flex flex-row gap-14 mt-16 w-full px-5 justify-center animate__animated animate__fadeInUp"
+      >
+        <div class="overflow-hidden">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/p7_300x300.jpg"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Iphone
+          </h3>
         </div>
+        <div class="overflow-hidden">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/11_300x300.jpg"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Mini Speaker
+          </h3>
+        </div>
+        <div class="overflow-hidden sm:hidden md:inline-block lg:inline-block">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/9_300x300.avif"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Tablets
+          </h3>
+        </div>
+        <div class="overflow-hidden sm:hidden md:inline-block lg:inline-block">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/12_300x300.jpg"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Headphone
+          </h3>
+        </div>
+        <div class="overflow-hidden sm:hidden md:hidden lg:inline-block">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/10_300x300.jpg"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Laptops
+          </h3>
+        </div>
+        <div class="overflow-hidden sm:hidden md:hidden lg:inline-block">
+          <div>
+            <img
+              class="lg:w-32 hover:scale-110 duration-500 sm:w-44"
+              src="../src/images/Products/p4_300x300.jpg"
+              alt=""
+            />
+          </div>
+          <h3
+            class="text-center font-myFonts font-normal text-[#333333] text-[17px] duration-150 hover:text-[#e52e06]"
+          >
+            Accessories
+          </h3>
+        </div>
+      </div>
     </section>
     <!-- tranding products section ends here  -->
 
     <!-- speacial product section start here  -->
-    <section class="flex lg:flex-row md:flex-row sm:flex-col gap-8 mt-24 max-w-7xl mx-auto my-0 px-10 flex-wrap">
-        <div class="lg:h-80 md:h-72 sm:h-72 flex-1 bg-[url('../src/images/Banners/sub-banner-1.jpg')] bg-center rounded-lg bg-cover flex flex-col pt-5 items-center">
-            <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">SECURITY SMART CAMERA</h3>
-            <h2 class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]">Just Starting At $850</h2>
-            <button class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2">Shop Now</button>
-        </div>
-        <div class="lg:h-80 md:h-72 sm:h-72 flex-1 bg-[url('../src/images/Banners/sub-banner-2.jpg')] bg-center rounded-lg bg-cover flex flex-col pt-5 items-center">
-            <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">ENTERTAINMENT & GAMES</h3>
-            <h2 class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]">Just Starting At $850</h2> 
-            <button class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2">Shop Now</button>
-        </div>
+    <section
+      class="flex lg:flex-row md:flex-row sm:flex-col gap-8 mt-24 max-w-7xl mx-auto my-0 px-10 flex-wrap"
+    >
+      <div
+        class="lg:h-80 md:h-72 sm:h-72 flex-1 bg-[url('../src/images/Banners/sub-banner-1.jpg')] bg-center rounded-lg bg-cover flex flex-col pt-5 items-center"
+      >
+        <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">
+          SECURITY SMART CAMERA
+        </h3>
+        <h2
+          class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]"
+        >
+          Just Starting At $850
+        </h2>
+        <button
+          class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2"
+        >
+          Shop Now
+        </button>
+      </div>
+      <div
+        class="lg:h-80 md:h-72 sm:h-72 flex-1 bg-[url('../src/images/Banners/sub-banner-2.jpg')] bg-center rounded-lg bg-cover flex flex-col pt-5 items-center"
+      >
+        <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">
+          ENTERTAINMENT & GAMES
+        </h3>
+        <h2
+          class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]"
+        >
+          Just Starting At $850
+        </h2>
+        <button
+          class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2"
+        >
+          Shop Now
+        </button>
+      </div>
     </section>
     <!-- speacial product section ends here  -->
 
-
-
     <!-- latest product start here  -->
     <section class="mt-14 flex flex-col max-w-7xl mx-auto my-0 px-5">
-        <h2 class="ml-7 mb-8 pl-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]">Latest Product</h2>
-        <div class="flex justify-center items-center gap-4">
-            <div class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden w-full">
-                    <img class="z-0 L-product duration-300 hover:scale-110" src="../src/images/Products/13_220x240_crop_center.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden w-full">
-                    <img class="L-product duration-300 hover:scale-110" src="../src/images/Products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_220x240_crop_center.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:hidden">
-                <div class="overflow-hidden w-full">
-                    <img class="L-product duration-300 hover:scale-110" src="../src/images/Products/p9_220x240_crop_center.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:hidden sm:hidden">
-                <div class="overflow-hidden w-full">
-                    <img class="L-product duration-300 hover:scale-110" src="../src/images/Products/p10_220x240_crop_center.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:hidden sm:hidden">
-                <div class="overflow-hidden w-full">
-                    <img class="L-product duration-300 hover:scale-110" src="../src/images/Products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_220x240_crop_center.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
+      <h2
+        class="ml-7 mb-8 pl-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]"
+      >
+        Latest Product
+      </h2>
+      <div class="flex justify-center items-center gap-4">
+        <div
+          class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden w-full">
+            <img
+              class="z-0 L-product duration-300 hover:scale-110"
+              src="../src/images/Products/13_220x240_crop_center.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
         </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden w-full">
+            <img
+              class="L-product duration-300 hover:scale-110"
+              src="../src/images/Products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_220x240_crop_center.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:block sm:hidden"
+        >
+          <div class="overflow-hidden w-full">
+            <img
+              class="L-product duration-300 hover:scale-110"
+              src="../src/images/Products/p9_220x240_crop_center.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:hidden sm:hidden"
+        >
+          <div class="overflow-hidden w-full">
+            <img
+              class="L-product duration-300 hover:scale-110"
+              src="../src/images/Products/p10_220x240_crop_center.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex-1 rounded-sm lg:block md:hidden sm:hidden"
+        >
+          <div class="overflow-hidden w-full">
+            <img
+              class="L-product duration-300 hover:scale-110"
+              src="../src/images/Products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_220x240_crop_center.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <!-- latest product section ends here  -->
 
     <!-- discount section start here  -->
     <section class="lg:ads md:ads sm:ads w-screen">
-        <div class="lg:w-2/4 md:w-full sm:w-full font-myFonts flex justify-center flex-col items-center">
-            <div class="bg-[#e52e06] h-14 w-36 text-center flex justify-center items-center mb-6 mt-5">
-                <h2 class="text-white font-semibold">Hurry Up !</h2>
-            </div>
-            <h3 class="text-center lg:text-5xl md:text-5xl sm:text-4xl lg:text-[#333333] md:text-red-500 mt-7 sm:text-red-500 font-semibold">Up To 25% Discount <br>
-                Check it Out</h3>
-
-            <div class="flex flex-row gap-4 mt-7 flex-wrap justify-center">
-                <div class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg">
-                    <span class="text-center font-medium text-2xl">12</span>
-                    <p class="text-xs font-thin mt-1 text-center">Day</p>
-                </div>
-                <div class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg">
-                    <span class="text-center font-medium text-2xl">12</span>
-                    <p class="text-xs font-thin mt-1 text-center">Hour</p>
-                </div>
-                <div class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg">
-                    <span class="text-center font-medium text-2xl">12</span>
-                    <p class="text-xs font-thin mt-1 text-center">Minuts</p>
-                </div>
-                <div class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg">
-                    <span class="text-center font-medium text-2xl">12</span>
-                    <p class="text-xs font-thin mt-1 text-center">Secound</p>
-                </div>
-            </div>
-            
-            <span class="font-myFonts font-medium text-2xl text-[#333333] duration-200 hover:text-[#e52e06] cursor-pointer mt-10">Shop Now</span>
+      <div
+        class="lg:w-2/4 md:w-full sm:w-full font-myFonts flex justify-center flex-col items-center"
+      >
+        <div
+          class="bg-[#e52e06] h-14 w-36 text-center flex justify-center items-center mb-6 mt-5"
+        >
+          <h2 class="text-white font-semibold">Hurry Up !</h2>
         </div>
+        <h3
+          class="text-center lg:text-5xl md:text-5xl sm:text-4xl lg:text-[#333333] md:text-red-500 mt-7 sm:text-red-500 font-semibold"
+        >
+          Up To 25% Discount <br />
+          Check it Out
+        </h3>
+
+        <div class="flex flex-row gap-4 mt-7 flex-wrap justify-center">
+          <div
+            class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg"
+          >
+            <span class="text-center font-medium text-2xl">12</span>
+            <p class="text-xs font-thin mt-1 text-center">Day</p>
+          </div>
+          <div
+            class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg"
+          >
+            <span class="text-center font-medium text-2xl">12</span>
+            <p class="text-xs font-thin mt-1 text-center">Hour</p>
+          </div>
+          <div
+            class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg"
+          >
+            <span class="text-center font-medium text-2xl">12</span>
+            <p class="text-xs font-thin mt-1 text-center">Minuts</p>
+          </div>
+          <div
+            class="flex flex-col font-myFonts rounded-lg items-center justify-center w-20 h-20 shadow-lg"
+          >
+            <span class="text-center font-medium text-2xl">12</span>
+            <p class="text-xs font-thin mt-1 text-center">Secound</p>
+          </div>
+        </div>
+
+        <span
+          class="font-myFonts font-medium text-2xl text-[#333333] duration-200 hover:text-[#e52e06] cursor-pointer mt-10"
+          >Shop Now</span
+        >
+      </div>
     </section>
     <!-- discount section ends here  -->
 
     <!-- products section start here  -->
     <section class="max-w-7xl mx-auto my-0 px-5 pt-7" id="product">
-        <h2 class="ml-7 mb-8 pl-4 pt-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]">Popular Products</h2>
-        <div class="grid grid-flow-col lg:grid-rows-2 md:grid-rows-2 sm:grid-rows-4 gap-4 pt-7">
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p10_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/13_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/12_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p1_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p2_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p4_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p5_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
-
-            <div class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block">
-                <div class="overflow-hidden my-2">
-                    <img class="L-product mx-auto my-0 duration-300 hover:scale-110" src="../src/images/Products/p6_large.jpg" alt="">
-                </div>
-                <div class="text-center font-medium text-[#ffc400] mt-5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <h2 class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]">Duro Ultra Watch</h2>
-                <p class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold">$50.00 <del class="text-center font-normal font-myFonts text-[#333333] text-sm">$90.00</del></p>
-            </div>
+      <h2
+        class="ml-7 mb-8 pl-4 pt-4 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]"
+      >
+        Popular Products
+      </h2>
+      <div
+        class="grid grid-flow-col lg:grid-rows-2 md:grid-rows-2 sm:grid-rows-4 gap-4 pt-7"
+      >
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p10_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
         </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/13_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/12_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p1_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p2_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p4_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p5_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+
+        <div
+          class="shadow-xl L-product-box pb-3 flex items-center justify-center rounded-sm lg:block md:block sm:block"
+        >
+          <div class="overflow-hidden my-2">
+            <img
+              class="L-product mx-auto my-0 duration-300 hover:scale-110"
+              src="../src/images/Products/p6_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-center font-medium text-[#ffc400] mt-5">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2
+            class="text-center font-myFonts text-xl text-[#333333] duration-200 font-normal ease-in-out hover:text-[#e52e06]"
+          >
+            Duro Ultra Watch
+          </h2>
+          <p
+            class="w-full font-myFonts text-center text-xl text-[#e52e06] font-bold"
+          >
+            $50.00
+            <del
+              class="text-center font-normal font-myFonts text-[#333333] text-sm"
+              >$90.00</del
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <!-- products section ends here  -->
 
     <!-- blog section start here  -->
     <section class="max-w-7xl mx-auto my-0 px-5 mt-9" id="blog">
-        <h2 class="ml-7 mb-8 pl-4 mt-7 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]">Blogs & Events</h2>
-        <div class="flex flex-row lg:justify-around md:justify-around sm:justify-center sm:items-center md:items-center lg:items-center gap-3 mb-7">
-            <div class="flex-1 flex flex-col rounded-md sm:block">
-                <div class="overflow-hidden w-full rounded-lg">
-                    <img class="duration-500 hover:scale-110 rounded-md" src="../src/images/Products/04_684500ea-e527-4171-8e1a-07c34d71c243_grande.jpg" alt="">
-                </div>
-                <span class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span>
-                <h3 class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer">Read the BLOG</h3>
-            </div>
-            <div class="flex-1 flex flex-col rounded-md sm:hidden md:block lg:block">
-                <div class="overflow-hidden w-full rounded-lg">
-                    <img class="duration-500 hover:scale-110 rounded-md" src="../src/images/Products/b1_grande.jpg" alt="">
-                </div>
-                <span class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span>
-                <h3 class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer">Read the BLOG</h3>
-            </div>
-            <div class="flex-1 flex flex-col rounded-md sm:hidden md:hidden lg:block">
-                <div class="overflow-hidden w-full rounded-lg">
-                    <img class="duration-500 hover:scale-110 rounded-md" src="../src/images/Products/b2_74c4b7c0-e805-4704-a4ab-4e68c8e4eae2_grande.webp" alt="">
-                </div>
-                <span class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span>
-                <h3 class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer">Read the BLOG</h3>
-            </div>
+      <h2
+        class="ml-7 mb-8 pl-4 mt-7 font-myFonts font-medium md:text-3xl sm:text-2xl lg:text-3xl text-[#333333]"
+      >
+        Blogs & Events
+      </h2>
+      <div
+        class="flex flex-row lg:justify-around md:justify-around sm:justify-center sm:items-center md:items-center lg:items-center gap-3 mb-7"
+      >
+        <div class="flex-1 flex flex-col rounded-md sm:block">
+          <div class="overflow-hidden w-full rounded-lg">
+            <img
+              class="duration-500 hover:scale-110 rounded-md"
+              src="../src/images/Products/04_684500ea-e527-4171-8e1a-07c34d71c243_grande.jpg"
+              alt=""
+            />
+          </div>
+          <span
+            class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"
+            ><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span
+          >
+          <h3
+            class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer"
+          >
+            Read the BLOG
+          </h3>
         </div>
-        
+        <div
+          class="flex-1 flex flex-col rounded-md sm:hidden md:block lg:block"
+        >
+          <div class="overflow-hidden w-full rounded-lg">
+            <img
+              class="duration-500 hover:scale-110 rounded-md"
+              src="../src/images/Products/b1_grande.jpg"
+              alt=""
+            />
+          </div>
+          <span
+            class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"
+            ><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span
+          >
+          <h3
+            class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer"
+          >
+            Read the BLOG
+          </h3>
+        </div>
+        <div
+          class="flex-1 flex flex-col rounded-md sm:hidden md:hidden lg:block"
+        >
+          <div class="overflow-hidden w-full rounded-lg">
+            <img
+              class="duration-500 hover:scale-110 rounded-md"
+              src="../src/images/Products/b2_74c4b7c0-e805-4704-a4ab-4e68c8e4eae2_grande.webp"
+              alt=""
+            />
+          </div>
+          <span
+            class="pl-2 font-myFonts text-[#333333] text-sm mt-3 font-thin opacity-60"
+            ><i class="fa-solid fa-calendar-days"></i> Jan 21, 2023</span
+          >
+          <h3
+            class="pl-2 text-xl font-myFonts font-normal text[#444444] mt-2 opacity-80 duration-300 hover:text-[#e52e06] cursor-pointer"
+          >
+            Read the BLOG
+          </h3>
+        </div>
+      </div>
     </section>
     <!-- blog section ends here  -->
 
-
     <!-- ads section start here  -->
-    <section  class="max-w-7xl mx-auto my-0 px-5 pt-5 bg-[url('..//src/images/Banners/slide61.webp')] lg:h-[50vh] md:h-[50vh] sm:h-[60vh] bg-center bg-cover">
-        <div class="flex flex-col items-center">
-            <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">SECURITY SMART CAMERA</h3>
-            <h2 class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]">Just Starting At $850</h2>
-            <span class="p-2 text-3xl font-myFonts font-bold text-[#e52e06]">234$</span>
-            <button class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2">Shop Now</button>
-        </div>
+    <section
+      class="max-w-7xl mx-auto my-0 px-5 pt-5 bg-[url('..//src/images/Banners/slide61.webp')] lg:h-[50vh] md:h-[50vh] sm:h-[60vh] bg-center bg-cover"
+    >
+      <div class="flex flex-col items-center">
+        <h3 class="font-myFonts font-normal text-[#333333] text-sm text-center">
+          SECURITY SMART CAMERA
+        </h3>
+        <h2
+          class="font-myFonts font-normal text-2xl text-center mt-3 text-[#333333]"
+        >
+          Just Starting At $850
+        </h2>
+        <span class="p-2 text-3xl font-myFonts font-bold text-[#e52e06]"
+          >234$</span
+        >
+        <button
+          class="bg-[#333333] duration-300 mt-3 hover:bg-[#e52e06] hover:shadow-lg text-white font-myFonts font-bold text-center rounded-full md:p-2 sm:p-1 lg:p-2"
+        >
+          Shop Now
+        </button>
+      </div>
     </section>
     <!-- ads section ends here  -->
 
     <!-- services start here  -->
     <section class="bg-gray-100 mt-6 pt-6">
-        <div class="max-w-7xl mx-auto my-0 px-5 flex justify-around gap-3 md:flex-row sm:flex-col">
-            <div class="flex justify-center items-center flex-col p-4">
-                <img class="w-14" src="../src/images/Logos/i2-2_medium_e2b39cba-8c39-4a2d-81c7-8e8688d8c9b5.png" alt="">
-                <h3 class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5">Free delivery</h3>
-                <p class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5">And free returns. See checkout for <br>delivery dates.</p>
-            </div>
-
-            <div class="flex justify-center items-center flex-col p-4">
-                <img class="w-14" src="../src/images/Logos/i2_medium_ded55818-afbc-49a9-816a-72379db6213c.png" alt="">
-                <h3 class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5">Free delivery</h3>
-                <p class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5">Choose to check out with Apple Card <br> Monthly Installments.</p>
-            </div>
-
-            <div class="flex justify-center items-center flex-col p-4">
-                <img class="w-14" src="../src/images/Logos/gmm_medium_9c0bfab9-b0f5-46ba-ae91-e04fe3803037.png" alt="">
-                <h3 class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5">Free delivery</h3>
-                <p class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5">Engrave your device with your name or <br> a personal note</p>
-            </div>
+      <div
+        class="max-w-7xl mx-auto my-0 px-5 flex justify-around gap-3 md:flex-row sm:flex-col"
+      >
+        <div class="flex justify-center items-center flex-col p-4">
+          <img
+            class="w-14"
+            src="../src/images/Logos/i2-2_medium_e2b39cba-8c39-4a2d-81c7-8e8688d8c9b5.png"
+            alt=""
+          />
+          <h3
+            class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5"
+          >
+            Free delivery
+          </h3>
+          <p
+            class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5"
+          >
+            And free returns. See checkout for <br />delivery dates.
+          </p>
         </div>
+
+        <div class="flex justify-center items-center flex-col p-4">
+          <img
+            class="w-14"
+            src="../src/images/Logos/i2_medium_ded55818-afbc-49a9-816a-72379db6213c.png"
+            alt=""
+          />
+          <h3
+            class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5"
+          >
+            Free delivery
+          </h3>
+          <p
+            class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5"
+          >
+            Choose to check out with Apple Card <br />
+            Monthly Installments.
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center flex-col p-4">
+          <img
+            class="w-14"
+            src="../src/images/Logos/gmm_medium_9c0bfab9-b0f5-46ba-ae91-e04fe3803037.png"
+            alt=""
+          />
+          <h3
+            class="text-center font-normal text-2xl font-myFonts text-[#333333] mt-5"
+          >
+            Free delivery
+          </h3>
+          <p
+            class="text-center font-thin font-myFonts text-sm text-[#444444] mt-5 mb-5"
+          >
+            Engrave your device with your name or <br />
+            a personal note
+          </p>
+        </div>
+      </div>
     </section>
     <!-- services ends here  -->
 
     <!-- contact section start here -->
-    <section id="contact" class="max-w-7xl mx-auto my-0 px-5 flex justify-between gap-5 mt-7 flex-wrap">
-        <div class="flex-1">
-            <h3 class="font-myFonts text-2xl text-[#444444] font-bold">Contact Us</h3>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Drou Demo Store</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">No. 1259 Freedom, New York</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">United States</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">+91-987654321</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">demo@exampledemo.com</p>
+    <section
+      id="contact"
+      class="max-w-7xl mx-auto my-0 px-5 flex justify-between gap-5 mt-7 flex-wrap"
+    >
+      <div class="flex-1">
+        <h3 class="font-myFonts text-2xl text-[#444444] font-bold">
+          Contact Us
+        </h3>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Drou Demo Store
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          No. 1259 Freedom, New York
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          United States
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          +91-987654321
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          demo@exampledemo.com
+        </p>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-myFonts text-2xl text-[#444444] font-bold">
+          Information
+        </h3>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Product Support
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Checkout
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          License Policy
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Affiliate
+        </p>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-myFonts text-2xl text-[#444444] font-bold">
+          Customer Service
+        </h3>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Help Center
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Redeem Voucher
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Contact Us
+        </p>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Policies & Rules
+        </p>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-myFonts text-2xl text-[#444444] font-bold">
+          Download Our App
+        </h3>
+        <p
+          class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer"
+        >
+          Download our App and get extra 15% Discount on <br />your first
+          Order..!
+        </p>
+        <div class="flex justify-around mt-5">
+          <img
+            class="shadow-lg cursor-pointer h-10"
+            src="../src/images/Logos/app-store.jpg"
+            alt=""
+          />
+          <img
+            class="shadow-lg cursor-pointer h-10"
+            src="../src/images/Logos/google-play.jpg"
+            alt=""
+          />
         </div>
-        <div class="flex-1">
-            <h3 class="font-myFonts text-2xl text-[#444444] font-bold">Information</h3>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Product Support</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Checkout</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">License Policy</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Affiliate</p>
-        </div>
-        <div class="flex-1">
-            <h3 class="font-myFonts text-2xl text-[#444444] font-bold">Customer Service</h3>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Help Center</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Redeem Voucher</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Contact Us</p>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Policies & Rules</p>
-        </div>
-        <div class="flex-1">
-            <h3 class="font-myFonts text-2xl text-[#444444] font-bold">Download Our App</h3>
-            <p class="font-normal font-myFonts text-base mt-2 hover:text-[#e52e06] duration-300 cursor-pointer">Download our App and get extra 15% Discount on <br>your first Order..!</p>
-            <div class="flex justify-around mt-5">
-                <img class="shadow-lg cursor-pointer h-10" src="../src/images/Logos/app-store.jpg" alt="">
-                <img class="shadow-lg cursor-pointer h-10" src="../src/images/Logos/google-play.jpg" alt="">
-            </div>
-        </div>
+      </div>
     </section>
     <!-- contact section ends here  -->
 
     <!-- footer section start here  -->
-    <footer class="flex flex-row flex-wrap max-w-7xl mx-auto my-0 px-5 lg:justify-between md:justify-between sm:justify-center items-center mt-14 mb-4">
-        <div>
-            <p class="font-myFonts text-sm text-[#444444] font-thin text-center">Copyright © nCombinate | Built by Md Munna Mia.
-            </p>
-        </div>
-        <div>
-            <img src="../src/images/Logos/payment-method.png" class="lg:mt-0 md:mt-2 sm:mt-3" alt="">
-        </div>
+    <footer
+      class="flex flex-row flex-wrap max-w-7xl mx-auto my-0 px-5 lg:justify-between md:justify-between sm:justify-center items-center mt-14 mb-4"
+    >
+      <div>
+        <p class="font-myFonts text-sm text-[#444444] font-thin text-center">
+          Copyright © nCombinate | Built by Md Munna Mia.
+        </p>
+      </div>
+      <div>
+        <img
+          src="../src/images/Logos/payment-method.png"
+          class="lg:mt-0 md:mt-2 sm:mt-3"
+          alt=""
+        />
+      </div>
     </footer>
     <!-- footer section ends here  -->
 
     <!-- script file  -->
     <script src="../src/script.js"></script>
-
-</body>
+  </body>
 </html>
