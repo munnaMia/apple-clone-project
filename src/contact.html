@@ -25,59 +25,8 @@
   </head>
   <body>
     <!-- header section starts here  -->
-    <header class="w-screen pb-2 relative bg-white z-30 navbar">
+    <header class="w-screen pb-2 fixed bg-white z-30 navbar">
       <nav class="flex mx-auto my-0 flex-col max-w-7xl relative">
-        <!-- top navbar starts here  -->
-        <div class="lg:top-nav hidden">
-          <!-- top nav part one  -->
-          <div class="flex">
-            <p
-              class="font-myFonts text-sm font-medium text-[#444444] not-italic mr-2"
-            >
-              (08)123 456 7890
-            </p>
-            <p
-              class="font-myFonts text-sm font-medium text-[#333333] not-italic border-l-2 pl-2"
-            >
-              <a href="https://maps.app.goo.gl/VGJbiymDB3faxuzY7"
-                >Store location</a
-              >
-            </p>
-          </div>
-
-          <!-- top nav part two -->
-          <div>
-            <span
-              class="font-myFonts not-italic font-normal text-base text-[#444444]"
-              >Tell a friend about Drou & get 20% off*</span
-            >
-          </div>
-
-          <!-- top nav part three  -->
-          <div
-            class="flex font-myFonts text-sm font-bold text-[#444444] not-italic"
-          >
-            <select
-              class="font-myFonts bg-transparent outline-none border-none mr-3 cursor-pointer"
-              name="money"
-              id=""
-            >
-              <option class="font-myFonts bg-transparent" value="USD">
-                USD
-              </option>
-              <option class="font-myFonts bg-transparent" value="TK">TK</option>
-              <option class="font-myFonts bg-transparent" value="INR">
-                INR
-              </option>
-            </select>
-            <span
-              class="font-myFonts text-sm font-medium text-[#444444] not-italic border-l-2 pl-2 cursor-pointer"
-              >Log in / Sign Up</span
-            >
-          </div>
-        </div>
-        <!-- top navbar ends here  -->
-
         <!-- bottom navbar starts here  -->
         <div class="flex justify-between items-center lg:px-10 sm:px-10 pt-3">
           <!-- company logo  -->
@@ -95,7 +44,7 @@
           <div>
             <ul class="lg:flex lg:gap-5 hidden">
               <li class="bottom-nav-option">
-                <a href="#home"
+                <a href="../src/index.html"
                   >home <i class="fa-solid fa-angle-down text-xs"></i>
                 </a>
               </li>
@@ -140,6 +89,175 @@
       </nav>
     </header>
     <!-- header section ends here  -->
+
+    <!-- navigation section start here  -->
+    <section
+      class="lg:h-40 md:h-36 sm:h-32 bg-gray-200 flex items-end lg:pb-8 md:pb-6 sm:pb-4 pl-7 max-w-7xl mx-auto my-0"
+    >
+      <span
+        ><a
+          class="text-sm font-myFonts font-thin duration-200 ease-in-out hover:text-[#e52e06]"
+          href="../src/index.html"
+          >Home /</a
+        ></span
+      >
+      <span
+        ><a
+          class="text-sm font-myFonts font-thin text-[#e52e06]"
+          href="../src/contact.html"
+        >
+          Contact</a
+        ></span
+      >
+    </section>
+    <!-- navigation section ends here  -->
+
+    <!-- to contact section  -->
+    <section class="max-w-7xl mx-auto my-0 px-7">
+      <div class="mt-16">
+        <h2 class="font-myFonts text-3xl text-[#333333] font-medium">
+          We're always eager to hear from you!
+        </h2>
+        <p
+          class="font-myFonts font-thin text-[#444444] text-sm mt-2 opacity-80"
+        >
+          You can call us in working time or visit our office. All mails will
+          get the response within 24 hours. Love to hear from you!
+        </p>
+      </div>
+
+      <div class="flex gap-2 mt-6 pt-7 mb-7 lg:flex-row md:flex-row sm:flex-col">
+        <div class="flex flex-1 sm:mt-7 sm:ml-5">
+          <div>
+            <i class="text-3xl text-[#e52e06] fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ml-4">
+            <h3 class="text-lg text-[#323232] font-myFonts font-medium">
+              ADDRESS
+            </h3>
+            <ul class="mt-5">
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                1800 Abbot Kinney Blvd. Unit D & E Venice
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-1 sm:mt-7 sm:ml-5">
+          <div>
+            <i class="text-3xl text-[#e52e06] fa-solid fa-phone"></i>
+          </div>
+          <div class="ml-4">
+            <h3 class="text-lg text-[#323232] font-myFonts font-medium">
+              Contact
+            </h3>
+            <ul class="mt-5">
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                Mobile:
+                <span class="font-semibold text-[#333333] opacity-100"
+                  >(+88) – 1990 – 6886</span
+                >
+              </li>
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                Hotline:
+                <span class="font-semibold text-[#333333] opacity-100"
+                  >1800 – 1102</span
+                >
+              </li>
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                Mail:
+                <span class="font-semibold text-[#333333] opacity-100"
+                  >contact@drou.com</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-1 sm:mt-7 sm:ml-5">
+          <div>
+            <i class="text-3xl text-[#e52e06] fa-regular fa-clock"></i>
+          </div>
+          <div class="ml-4">
+            <h3 class="text-lg text-[#323232] font-myFonts font-medium">
+              HOUR OF OPERATION
+            </h3>
+            <ul class="mt-5">
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                Monday – Friday : 09:00 – 20:00
+              </li>
+              <li
+                class="font-myFonts text-sm opacity-70 text-[#333333] font-normal"
+              >
+                Sunday & Saturday: 10:30 – 22:00
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </section>
+    <!-- to contact section  -->
+
+    <!-- map start here  -->
+    <section class="max-w-7xl mx-auto my-0 px-7 h-[80vh] py-7">
+      <iframe
+        class="w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3651.6606376242466!2d90.38065630473557!3d23.759478207190792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1696659745485!5m2!1sen!2sbd"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- map ends here  -->
+
+    <!-- contact section  -->
+    <section class="max-w-7xl mx-auto my-0 px-7 py-7">
+      <h2 class="text-center font-myFonts font-medium text-[#333333] text-4xl">
+        Ask us anything here
+      </h2>
+      <div class="w-full flex flex-col justify-center items-center mt-5">
+        <div class="flex w-full gap-4">
+          <input
+            class="w-full flex-1 text-sm text-black rounded-full border-none outline-none bg-gray-100 py-4 pl-4"
+            placeholder="Name"
+            type="text"
+            name=""
+            id=""
+          />
+          <input
+            class="w-full flex-1 text-sm text-black rounded-full border-none outline-none bg-gray-100 py-4 pl-4"
+            placeholder="Email"
+            type="email"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="w-full mt-3">
+          <input class="w-full flex-1 text-sm text-black rounded-full border-none outline-none bg-gray-100 py-4 pl-4" placeholder="Subject" type="text" />
+        </div>
+        <textarea
+          class="w-full text-sm text-black rounded-lg border-none outline-none bg-gray-100 py-4 pl-4 mt-3 h-56"
+          placeholder="Message"
+          name=""
+          id=""
+        ></textarea>
+      </div>
+    </section>
+    <!-- contact section  -->
 
     <!-- contact section start here -->
     <section
@@ -236,7 +354,7 @@
           Download our App and get extra 15% Discount on <br />your first
           Order..!
         </p>
-        <div class="flex justify-around mt-5">
+        <div class="flex justify-around mt-5 lg:flex-row md:flex-col sm:flex-col">
           <img
             class="shadow-lg cursor-pointer h-10"
             src="../src/images/Logos/app-store.jpg"
